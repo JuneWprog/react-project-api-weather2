@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body{
+        margin:0;
+        background-color: #f5f4f4;
+        text-align: center;
+
+        }
+        h1{
+            font-family: cursive;
+            font-size: 8rem;
+            color:#00303f;
+        }
+        form{
+            padding-left:130px;
+            width:400px;
+            height:400px;
+            text-align: left;
+            margin:auto;
+        }
+        label{
+            
+            font-family:cursive;
+            margin-top:10%;
+            font-size:1rem;
+            color:#cdac81;
+            margin-right:3%;
+        }
+
+        input,select,button{
+            border-color: #cae4db;
+            border-style: solid;
+            border-radius: 0%;
+            margin-top: 10%;
+        }
+        button{
+            margin-left: 2%;
+        }
+        footer{
+            background-color:#cae4db ;
+            font-size:10px;
+            color:#cdac81;
+            padding:50px 50px;
+        }
+        #country{
+            margin-left:30px;
+        }
+        #city{
+            margin-left:60px;
+        }
+        #units{
+            margin-left:50px;
+            border-width: 2px;
+        }
+        
+    </style> 
+
+
+</head>
+<body>
+    <h1>Weather</h1>
+    <form action="index.html" method="POST">
+        
+        <label for="city">City:</label>
+        <input type="text" name="cityName" id="city"><br>
+        <label for="country">Country: </label>
+        <input type="text" name="Country" id="country" ><br>
+        <label for="units">Units: </label> 
+        <select id="units" name="units" id="units">
+            <option value="metric">Metric</option>
+            <option value="imperial">Imperial</option>
+        </select>   
+        <div style="margin:50px auto 100px; text-align:center;">
+             <button name="current"style="color:#00303f;">Current Weather</button>
+        </div>
+    </form>
+    <footer>
+        <h3>Copy Right Jun Wong</h3>
+    </footer>
+</body>
+</html>
